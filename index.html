@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Topo test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section id="parentForm">
+    <h1>Parent form</h1>
+    <table>
+      <tr>
+        <th>Section</th>
+        <th>Field</th>
+        <th>Value</th>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Inspection Type</td>
+        <td id="pGenInspType">Internal</td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Inspection Company</td>
+        <td id="pGenInspComp">ISP Ltd</td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Contact Person</td>
+        <td id="pGenContPers">Simon</td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Inspection Type</td>
+        <td id="pGenInspType">Internal</td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Mail Address</td>
+        <td id="pGenMailAdds">abc@xyz.com</td>
+      </tr>
+
+      <tr>
+        <td>Supplier Information</td>
+        <td>Agency Code</td>
+        <td id="pSuppAgyCode">HP10836</td>
+      </tr>
+
+      <tr>
+        <td>Supplier Information</td>
+        <td>Agency Name</td>
+        <td id="pSuppAgyName">Happy People</td>
+      </tr>
+
+      <tr>
+        <td>Product Information</td>
+        <td>Brand</td>
+        <td id="pProdBrand">Puma</td>
+      </tr>
+
+      <tr>
+        <td>Product Information</td>
+        <td>Brand Type</td>
+        <td id="pProdBrandType">Sports</td>
+      </tr>
+
+      <tr>
+        <td>Product Information</td>
+        <td>Buyers Department</td>
+        <td id="pProdBuyDept">Accounting</td>
+      </tr>
+    </table>
+    <br>
+    <button onclick="GenChildForm()">Generate child form</button>
+  </section>
+
+  <section id="childForm" style="display:none">
+    <h1>Child Form</h1>
+    <table>
+      <tr>
+        <th>Section</th>
+        <th>Field</th>
+        <th>Value</th>
+        <th>Parent value</th>
+        <th>Match</th>
+      </tr>
+
+      <tr>
+        <td>Header</td>
+        <td>Inspection Type</td>
+        <td id="cHeaderInspType">External</td>
+        <td id="cpHeaderInspType"></td>
+        <td id="ctHeaderInspType"></td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Inspection Company</td>
+        <td id="cGenInspComp">ISP Ltd</td>
+        <td id="cpGenInspComp"></td>
+        <td id="ctGenInspComp"></td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Contact Person</td>
+        <td id="cGenContPers">Simon</td>
+        <td id="cpGenContPers"></td>
+        <td id="ctGenContPers"></td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Inspection Type</td>
+        <td id="cGenInspType">External</td>
+        <td id="cpGenInspType"></td>
+        <td id="ctGenInspType"></td>
+      </tr>
+
+      <tr>
+        <td>General Information</td>
+        <td>Mail Address</td>
+        <td id="cGenMailAdds">abc@xyz.com</td>
+        <td id="cpGenMailAdds"></td>
+        <td id="ctGenMailAdds"></td>
+      </tr>
+
+      <tr>
+        <td>Supplier Information</td>
+        <td>Agency Code</td>
+        <td id="cSuppAgyCode">HP10836</td>
+        <td id="cpSuppAgyCode"></td>
+        <td id="ctSuppAgyCode"></td>
+      </tr>
+
+      <tr>
+        <td>Supplier Information</td>
+        <td>Agency Name</td>
+        <td id="cSuppAgyName">Happy People</td>
+        <td id="cpSuppAgyName"></td>
+        <td id="ctSuppAgyName"></td>
+      </tr>
+
+      <tr>
+        <td>Product Information</td>
+        <td>Brand</td>
+        <td id="cProdBrand">Nike</td>
+        <td id="cpProdBrand"></td>
+        <td id="ctProdBrand"></td>
+      </tr>
+
+      <tr>
+        <td>Product Information</td>
+        <td>Brand Type</td>
+        <td id="cProdBrandType">Sports</td>
+        <td id="cpProdBrandType"></td>
+        <td id="ctProdBrandType"></td>
+      </tr>
+
+      <tr>
+        <td>Product Information</td>
+        <td>Buyers Department</td>
+        <td id="cProdBuyDept">Procurement</td>
+        <td id="cpProdBuyDept"></td>
+        <td id="ctProdBuyDept"></td>
+      </tr>
+    </table>
+    <br>
+    <button onclick="doTest()">Cross check</button>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>
